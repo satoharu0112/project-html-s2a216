@@ -1,0 +1,70 @@
+<!--作成日:2024/04/26-->
+<!--作成者　佐藤瞭-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta  name="viewport"   content="width=device-width,initial-scale=1.0"/>
+  <title>学生情報登録04</title>
+      <link rel="stylesheet" href="ensyu09_4.css">
+<body>
+<h2>学生情報登録04<h2>
+<p>必要事項を記入して入力して登録ボタンを押してください。</p>
+<br/>
+<form action="#">
+  <div class="contact-from">
+  <div class="contact-item">
+    <p class="from-title">学籍番号<span class="must">必須</span></ｐ>
+      <input type="number" name="student"/>
+  </div>
+  <div class="contact-item">
+    <p class="from-title">氏名<span class="must">必須</span></ｐ>
+      <input type="text" name="username"/>
+  </div>
+  <div class="contact-item">
+    <p class="from-title">電話番号</ｐ>
+      <input type="tel" name="tel"/>
+  </div>
+  <div class="contact-item">
+    <p class="from-title">生年月日<span class="must">必須</span></ｐ>
+      <input type="date" name="birthday"/>
+  </div>
+  <div class="contact-item">
+    <p class="from-title">メール</p>
+      <input type="email" name="mail"/>
+  </div>
+  <div class="contact-item">
+    <p class="from-title">住所</ｐ>
+      <input type="text" name="addres"/>
+  </div>
+    <p class="from-title">性別<span class="must">必須</span></ｐ>
+      <input type="date" name="birthday"/>
+  <div>
+      <input type="radio" name="gender" value="男" checked>
+  <span>男</span>
+  <input type="radio" name="gender" value="女" id="woman">
+  <span>女</span>
+  </div>
+    <div class="contact-item">
+    <p class="from-title">学科<span class="must">必須</span></ｐ>
+  <select name="course">
+    <option selected value="情報大学併学科"></option>情報大学併学科</option>
+    <option selected value="システムエンジニア科"></option>システムエンジニア科</option>
+    <option selected value="ITシステム科"></option>ITシステム科</option>
+  </select>
+    </div>
+  <P>受講科目(複数選択可)</P>
+  <div>
+  <span><input type="checkbox" name="subject"value="HTML"/>HTML</span>
+  <span><input type="checkbox" name="subject"value="Java"/>Java</span>
+  <span><input type="checkbox" name="subject"value="SQL"/>SQL</span>
+  <span><input type="checkbox" name="subject"value="国体"/>国体</span>
+  </div>
+  <p>参考</p>
+  <textarea name="remarks" cols="40" rows="4" maxlength="40"></textarea>
+  <br/>
+  <input type="submit" noclick="alert('send now!');return false;" value="登録">
+  <input type="reset" value="クリア"/>
+</from>
+</body>
